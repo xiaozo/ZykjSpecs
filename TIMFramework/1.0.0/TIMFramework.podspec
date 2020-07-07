@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
- s.source_files  = "TIMFramework/TIMFramework/**/*.{h,m,swift}"
+ #s.source_files  = "TIMFramework/TIMFramework/**/*.{h,m,swift}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -138,10 +138,10 @@ Pod::Spec.new do |s|
   s.libraries = 'c++', 'sqlite3' , 'z' , 'resolv'
 
   # 本库提供的 .a 静态库
-  #s.vendored_libraries  = 'TIMFramework/TIMFramework/Framework/**/*.a'
+  #s.vendored_libraries  = 'Framework/**/*.a'
     
     # 本库提供的 .framework 静态库
-  s.vendored_frameworks ='TIMFramework/TIMFramework/Framework/**/*.framework'
+  s.vendored_frameworks ='Framework/**/*.framework'
 
 
 end
